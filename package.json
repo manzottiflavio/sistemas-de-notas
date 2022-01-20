@@ -1,0 +1,17 @@
+{
+  "name": "sistema-de-notas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "flavio manzotti <manzottiflavio22@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
