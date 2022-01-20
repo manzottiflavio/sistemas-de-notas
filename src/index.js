@@ -38,7 +38,7 @@ app.post("/account",(request,response)=>{
         curso:[],
     });
     
-    //console.log(customers);
+   
     return response.status(201).send({message:"customer create successfull"});
     
 });
@@ -59,8 +59,6 @@ app.put("/account", verifyIfAccountExists,(request, response)=>{
 app.get("/account",verifyIfAccountExists,(request, response)=>{
     const{customer}=request;
     
-    
-    console.log(customer)
     return response.json(customer);
 })
 
