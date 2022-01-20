@@ -63,5 +63,15 @@ app.get("/account",verifyIfAccountExists,(request, response)=>{
 })
 
 
+app.delete("/account", verifyIfAccountExists,(request, response)=>{
+    const{customer}=request;
+
+
+    customers.splice(customer, 1);
+
+return response.status(201).json(customers)
+
+
+})
 app.listen(5555);
 
