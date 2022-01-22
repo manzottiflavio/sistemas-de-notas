@@ -27,6 +27,7 @@ app.post("/account",(request,response)=>{
     
     if(customerAlreadyExists){
         return response.status(400).json({Error: "customer already exists"});
+        
     }
     
     
